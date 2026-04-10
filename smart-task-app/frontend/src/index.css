@@ -1,0 +1,247 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.logoutBtn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.logoutBtn:hover {
+    background: #dc2626;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.filters select,
+.filters button {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.filters select {
+    background: white;
+}
+
+.filters button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filters button:hover {
+    background: #2563eb;
+}
+
+/* TASK INPUT */
+.taskBox {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.taskBox input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.taskBox input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+/* BUTTONS */
+.addBtn,
+.updateBtn {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.addBtn {
+    background: #10b981;
+}
+
+.addBtn:hover {
+    background: #059669;
+}
+
+.updateBtn {
+    background: #f59e0b;
+}
+
+.updateBtn:hover {
+    background: #d97706;
+}
+
+/* TASK LIST */
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* CARD */
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 16px 18px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* META */
+.meta {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* STATUS COLORS */
+.meta::before {
+    content: "• ";
+}
+
+.meta:contains("TODO") {
+    color: #f59e0b;
+}
+
+.meta:contains("IN_PROGRESS") {
+    color: #3b82f6;
+}
+
+.meta:contains("DONE") {
+    color: #10b981;
+}
+
+/* ACTIONS */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.editBtn,
+.deleteBtn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.editBtn {
+    background: #3b82f6;
+    color: white;
+}
+
+.editBtn:hover {
+    background: #2563eb;
+}
+
+.deleteBtn {
+    background: #ef4444;
+    color: white;
+}
+
+.deleteBtn:hover {
+    background: #dc2626;
+}
+
+/* PAGINATION */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pagination button:hover {
+    background: #2563eb;
+}
+
+.pagination button:disabled {
+    background: #cbd5f5;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-weight: 500;
+}
+
